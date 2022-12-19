@@ -6,6 +6,8 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 	background-color: #383474e5 ;
 	color: #e8ebee;
+    background-image:url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background1.jpg) ;
+
 }
 
 .container {
@@ -28,14 +30,15 @@ header form input {
     background-color: bisque(255, 255, 255, 0.3);
     border-radius: 16px 0px 16px 0px;
     border-bottom: 3px solid #ff69b4;
-
-    color: #313131;
+    
+    color: #0e0d0d;
     font-size: 20px;
     font-weight: 300;
     transition: 0.2s ease-in-out;
 }
 
-header form input:focus {
+header form input:focus,
+header form input:hover {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -52,4 +55,29 @@ header form div button {
 	text-shadow: none;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+header form div button:hover{
+    background-color: #ff69b4;
+}
+
+.city-weather {
+    display: flex ;
+    gap: 1.5rem;
+    margin: 0 0 3rem;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+.city-weather li {
+    display: block;
+    padding: 2.0rem;
+    background-color: #b989ad ;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 4px;
+    background-image:url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background2.jpg) ;
+
 }
