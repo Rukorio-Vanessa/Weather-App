@@ -6,9 +6,18 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 	background-color: #383474e5 ;
 	color: #e8ebee;
-    background-image:url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background1.jpg) ;
-
+    background-image:url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background4.jpg) ;
 }
+
+.navbar {
+    overflow: visible;
+    background-image: url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background4.jpg) ;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    text-align: center;
+    margin: 0;
+}   
 
 .container {
 	padding: 4rem 2rem;
@@ -29,12 +38,13 @@ header form input {
     outline-style: groove;
     background-color: bisque(255, 255, 255, 0.3);
     border-radius: 16px 0px 16px 0px;
-    border-bottom: 3px solid #ff69b4;
-    
+    border-bottom: 3px solid #79065a;
+    height: 20px;
     color: #0e0d0d;
     font-size: 20px;
     font-weight: 300;
     transition: 0.2s ease-in-out;
+    margin-bottom: 20px;
 }
 
 header form input:focus,
@@ -46,6 +56,7 @@ header form div button {
     background: #808080;
 	color: #fff;
     width: 100%;
+    height: 38px;
     max-width: 100px;
     padding: 10px 15px;
 	border: 1px solid #eee;
@@ -59,7 +70,7 @@ header form div button {
 }
 
 header form div button:hover{
-    background-color: #ff69b4;
+    background-color: #030838;
 }
 
 .city-weather {
@@ -68,16 +79,58 @@ header form div button:hover{
     margin: 0 0 3rem;
     list-style: none;
     padding: 0;
-    align-items: center;
+    justify-content: center;
 }
 
 .city-weather li {
-    display: block;
+    display: grid;
+    grid-gap: 5px;
+    box-sizing: border-box ;
+    width: 500px;
+    height: 400px;
     padding: 2.0rem;
     background-color: #b989ad ;
     gap: 1.5rem;
-    align-items: center;
-    border-radius: 4px;
-    background-image:url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background2.jpg) ;
+    justify-content: center;
+    border-radius: 10px;
+    border-style:  outset;
+    border-color: #4d424294;
+    text-align: center;
+}
 
+section .city-country {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+section .current-date{
+    font-size: 18px;
+}
+
+.weather-details .temperature {
+    margin: 5px 0px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6) ;
+    font-size: 55px;
+    font-weight: 450;
+    
+}
+
+.weather-details figure img {
+    height: 85px;
+}
+
+.weather-details .weather-description {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-style: oblique;
+    text-decoration: double;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+}
+
+.weather-details .temp-range {
+    text-decoration: overline ;
+    font-size: 18px;
 }
