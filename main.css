@@ -6,12 +6,12 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 	background-color: #383474e5 ;
 	color: #e8ebee;
-    background-image:url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background4.jpg) ;
-}
+    background-image:url(./background4.jpg);
+}    
 
 .navbar {
     overflow: visible;
-    background-image: url(/home/student/Documents/Moringa/Phase-1/Weather-App/images/background4.jpg) ;
+    background-image: url(./background4.jpg) ;
     position: fixed;
     top: 0; 
     width: 100%; 
