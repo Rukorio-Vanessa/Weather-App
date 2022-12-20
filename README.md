@@ -4,7 +4,7 @@ An app that shows the current weather in different cities
 ## General Description
 An application that allows you to search for the  current weather of any city.
 
-You can access this website on this link: https://rukorio-vanessa.github.io/Weather-App/
+You can access this website on this link: [weather-app](https://rukorio-vanessa.github.io/Weather-App/)
 
 ## Getting Started
 * To use the content in the repository ensure you have
