@@ -1,8 +1,12 @@
 html {
 	font-size: 16px;
+    min-height: 100%;
+    position: relative;
+
 }
 
 body {
+    min-height: 100vh;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 	background-color: #383474e5 ;
 	color: #e8ebee;
@@ -133,4 +137,12 @@ section .current-date{
 .weather-details .temp-range {
     text-decoration: overline ;
     font-size: 15px;
+}
+
+footer {
+    margin-top: auto 0;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }

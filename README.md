@@ -53,7 +53,6 @@ fetch data from the openweathermap api using:
 with the data I got back I performed the following functions in order to create the weather list in th DOM:    
     .then(data => {
         const{main, sys, name, weather} = data
-        //access relevant image depending on code for image in the api
         const weatherImage = `./icons/${weather[0]['icon']}.svg`
 
 
@@ -69,7 +68,6 @@ with the data I got back I performed the following functions in order to create 
                <div class="weather-description">${weather[0]['description']}</div>
                <div class="temp-range">${Math.round(main.temp_max)}°C/${Math.round(main.temp_min)}°C</div>
             </div>   `
-        //append list to the ul element    
         document.querySelector(".city-weather").appendChild(list)    
       })
 
