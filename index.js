@@ -10,7 +10,7 @@ d = new Date()
 localTime = d.getTime()
 localOffset = d.getTimezoneOffset() * 60000
 utc = localTime + localOffset
-var atlanta = utc + (1000 * -14400)
+let atlanta = utc + (1000 * -14400)
 nd = new Date()
 
 const form = document.querySelector("#search-form");
